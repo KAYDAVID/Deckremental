@@ -14,7 +14,7 @@ const game = {
 
     // 1. Manual Click Logic
     click: function() {
-        this.gold++;
+        this.paper++;
         this.updateDisplay();
     },
 
