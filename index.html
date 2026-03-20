@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deckremental</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f0f0f0; }
+        .stats { font-size: 24px; margin-bottom: 20px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="stats">
+        Paper: <span id="paper-count">0</span><br>
+        PPS (Paper Per Second): <span id="pps-count">0</span>
+    </div>
+
+    <button onclick="game.click()">Click for Paper!</button>
+    
+    <hr>
+
+    <div id="upgrades">
+        <button id="buy-auto-clicker" onclick="game.buyUpgrade('autoClicker')">
+            Buy Auto-Clicker (Cost: 10)
+        </button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
